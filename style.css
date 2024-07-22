@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#calculator {
+    height: 455px;
+    width: 320px;
+    background-color: #f2f2f2;
+    padding: 4px;
+}
+
+.resultPanel {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(45, 45, 45);
+    border: 1px solid lightgrey;
+}
+
+#result {
+    font-size: 3rem;
+    color: #f2f2f2;
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#clearDiv {
+    display: flex;
+    flex-direction: row;
+    margin: 1px;
+}
+
+#clearDiv button {
+    width: 50%;
+    height: 45px;
+    border: none;
+    background-color: rgb(15, 156, 227);
+}
+
+button {
+    margin: 1px;
+}
+
+.number {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1px;
+}
+
+#operators {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+#operators button {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #f2f2f2;
+    background-color: rgb(226, 173, 13);
+    font-size: 20px;
+}
+
+.equals {
+    width: 70px;
+    height: 70px;
+    background-color: #4e61c0;
+    border: 1px solid lightgrey;
+    color: #fff;
+    font-size: 20px;
+}
+
+.number:hover {
+    background-color: grey;
+}
+
+#equals:hover {
+    background-color: #004cfe;
+}
+
+#clearDiv > button:hover {
+    background-color: rgb(4, 63, 239);
+}
+
+#operators > button:hover {
+    background-color: rgb(237, 129, 45);
+}
